@@ -1,0 +1,134 @@
+body {
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+    background-size: cover;
+    transition: background 0.5s ease;
+}
+
+.calculator {
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+.display {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    min-height: 80px;
+    direction: ltr;
+}
+
+#result {
+    animation: smoothBlink 1.5s infinite;
+}
+
+@keyframes smoothBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.buttons {
+    padding: 15px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.btn {
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.3s;
+    padding: 12px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    color: white;
+    width: 100%;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #6b9bc6, #3e5e76);
+}
+
+.btn-operator {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.btn-operator:hover {
+    background: linear-gradient(135deg, #ff9a85, #ffc1a1);
+}
+
+.btn-clear {
+    background: linear-gradient(135deg, #dc3545, #e4606d);
+}
+
+.btn-clear:hover {
+    background: linear-gradient(135deg, #e4606d, #f28b95);
+}
+
+.btn-backspace {
+    background: linear-gradient(135deg, #f7b731, #ffd966);
+    color: black;
+}
+
+.btn-backspace:hover {
+    background: linear-gradient(135deg, #f9c864, #ffe08c);
+}
+
+.theme-btn {
+    background: linear-gradient(135deg, #0d6efd, #468cff);
+}
+
+.theme-btn:hover {
+    background: linear-gradient(135deg, #468cff, #74aaff);
+}
+
+.footer {
+    font-size: 14px;
+    color: #fff;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0dcaf0;
+}
+
+#social-links {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes erase {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+
+.theme-dark .calculator { background: rgba(0, 0, 0, 0.8); color: #fff; }
+.theme-light .calculator { background: rgba(255, 255, 255, 0.9); color: #000; }
+.theme-neon .calculator { background: rgba(0, 255, 255, 0.2); box-shadow: 0 0 20px cyan; }

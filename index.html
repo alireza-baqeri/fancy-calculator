@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="calculator card shadow-lg">
+            <div class="display p-3 text-start">
+                <div id="result" class="fs-2 fw-bold"></div>
+            </div>
+            <div class="buttons p-3">
+                <div class="row g-2">
+                    <div class="col-3"><button class="btn theme-btn" onclick="toggleTheme()">Theme</button></div>
+                    <div class="col-4"><button class="btn btn-clear" onclick="clearDisplay()">Clear</button></div>
+                    <div class="col-5"><button class="btn btn-backspace" onclick="backspace()">Backspace</button></div>
+                </div>
+                <div class="row g-2 mt-2">
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('7')">7</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('8')">8</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('9')">9</button></div>
+                    <div class="col-3"><button class="btn btn-operator" onclick="addToDisplay('/')">/</button></div>
+                </div>
+                <div class="row g-2 mt-2">
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('4')">4</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('5')">5</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('6')">6</button></div>
+                    <div class="col-3"><button class="btn btn-operator" onclick="addToDisplay('*')">*</button></div>
+                </div>
+                <div class="row g-2 mt-2">
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('1')">1</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('2')">2</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('3')">3</button></div>
+                    <div class="col-3"><button class="btn btn-operator" onclick="addToDisplay('-')">-</button></div>
+                </div>
+                <div class="row g-2 mt-2">
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('0')">0</button></div>
+                    <div class="col-3"><button class="btn btn-number" onclick="addToDisplay('.')">.</button></div>
+                    <div class="col-3"><button class="btn btn-operator" onclick="calculate()">=</button></div>
+                    <div class="col-3"><button class="btn btn-operator" onclick="addToDisplay('+')">+</button></div>
+                </div>
+            </div>
+            <div class="footer text-center p-2">
+                <span id="social-links">
+                    <a href="https://github.com/alireza-baqeri" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a> | 
+                    <a href="https://linkedin.com/in/alireza-bagheri-a585b0239" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
