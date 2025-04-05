@@ -5,7 +5,7 @@ body {
 }
 
 .calculator {
-    width: 400px;
+    width: 450px;
     border-radius: 20px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1);
@@ -19,10 +19,12 @@ body {
     border-radius: 10px 10px 0 0;
     min-height: 80px;
     direction: ltr;
+    overflow: hidden;
 }
 
 #result {
     animation: smoothBlink 1.5s infinite;
+    transition: font-size 0.3s ease;
 }
 
 @keyframes smoothBlink {
@@ -30,28 +32,52 @@ body {
     50% { opacity: 0.4; }
 }
 
-.buttons {
-    padding: 15px;
+.history {
+    background: rgba(0, 0, 0, 0.5);
+    max-height: 100px;
+    overflow-y: auto;
 }
 
-.row {
-    margin-bottom: 10px;
+#history-list {
+    background: transparent;
+    color: white;
+    border: none;
 }
 
 .btn {
     border-radius: 12px;
-    transition: transform 0.2s, background 0.3s;
+    transition: transform 0.2s;
     padding: 12px;
     font-size: 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #4b79a1, #283e51);
     color: white;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn:hover {
     transform: scale(1.1);
     background: linear-gradient(135deg, #6b9bc6, #3e5e76);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s;
+    top: 50%;
+    left: 50%;
+}
+
+.btn:active::after {
+    transform: scale(2);
+    transition: 0s;
 }
 
 .btn-operator {
@@ -73,6 +99,7 @@ body {
 .btn-backspace {
     background: linear-gradient(135deg, #f7b731, #ffd966);
     color: black;
+	font-size:13px;
 }
 
 .btn-backspace:hover {
@@ -132,3 +159,5 @@ body {
 .theme-dark .calculator { background: rgba(0, 0, 0, 0.8); color: #fff; }
 .theme-light .calculator { background: rgba(255, 255, 255, 0.9); color: #000; }
 .theme-neon .calculator { background: rgba(0, 255, 255, 0.2); box-shadow: 0 0 20px cyan; }
+.theme-sunset .calculator { background: linear-gradient(135deg, rgba(255, 87, 34, 0.5), rgba(255, 193, 7, 0.5)); }
+.theme-metal .calculator { background: linear-gradient(135deg, rgba(169, 169, 169, 0.8), rgba(105, 105, 105, 0.8)); }
