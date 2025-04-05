@@ -5,13 +5,13 @@ A stylish calculator built with HTML, CSS (Bootstrap), and JavaScript. Features 
 Open index.html in your browser, or use it online => [Live Demo](https://alireza-baqeri.github.io/fancy-calculator/)
 
 ## Themes and Interface
-![How it looks on your monitor 😃](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/main-1.png)  
-![Theme 2](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m2.png)  
-![Theme 3](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m3.png)  
-![Theme 4](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m4.png)  
-![Theme 5](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m5.png)  
-![Theme 6](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m6.png)  
-![Theme 7](https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m7.png)  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/main-1.png" width="300" alt="How it looks on your monitor 😃">  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m2.png" width="300" alt="Theme 2">  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m3.png" width="300" alt="Theme 3">  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m4.png" width="300" alt="Theme 4">  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m5.png" width="300" alt="Theme 5">  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m6.png" width="300" alt="Theme 6">  
+<img src="https://raw.githubusercontent.com/alireza-baqeri/fancy-calculator/main/m7.png" width="300" alt="Theme 7">  
 
 Click the "Theme" button to switch between dark, light, and neon themes.  
 Enjoy the animations and calculate away!  
